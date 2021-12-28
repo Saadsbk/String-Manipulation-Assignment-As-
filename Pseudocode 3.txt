@@ -1,0 +1,46 @@
+       	Declare Str : String
+    	Declare Str1 : String
+        Declare char1 : Char
+    	Declare char2 : Char 
+        Declare alphac : integer 
+    	Declare charc : integer 
+    	Declare digitc : integer 
+    	Declare Count : integer
+    	Declare i : integer
+	
+    	Str ← ""
+    	Str1 ← ""
+    	char1 ← ""
+    	char2 ← ""
+        alphac ← 0
+        charc ← 0
+        digitc ← 0 
+        Count ← 0
+        i ← 0
+        
+        Input "Enter a String : ", Str
+        Str1 ← LCASE(Str)
+        Input "Enter the character that you want to count : ", char1
+       
+            
+       	For i ← 1 to LENGTH(Str)
+        
+           char2 ← MID(Str,i,1)
+           If char2 = char1 then
+               count ← count + 1
+           End If
+           
+           char2 ← MID(Str1,i,1)
+           If char2 >= "a" and char2 <= "z" then 
+               alphac ← alphac + 1
+           Else If char2 >= "0" and char2 <= "9" then
+               digitc ← digitc + 1
+           Else 
+               charc ← charc + 1
+           End If 
+           
+        Next           
+        
+        Output Str , " has " , count , " selected character, " , alphac , " alphabets, " , digitc , " digits, and " , charc , " special characters"
+
+

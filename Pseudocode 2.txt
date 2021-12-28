@@ -1,0 +1,38 @@
+        Declare Str : String
+        Declare Str1 : String
+        Declare Str2 : String
+        Declare Remove : Char
+        Declare Replace : Char
+        Declare Pos : integer
+    
+        Str ← ""
+        Str1 ← ""
+        Str2 ← ""
+        Remove ← ""
+        Replace ← ""
+        Pos ← 0	
+       
+        Input "Enter a String : ", Str
+        
+        Input "Enter Character to remove : ", Remove
+            
+        Input "Enter Character to replace with : ", Replace
+      
+      
+        While LOCATE(Str, Remove) <> 0
+       
+           Pos ← LOCATE(Str,Remove)
+       
+           Str1 ← LEFT(Str,Pos-1)
+           Str2 ← RIGHT(Str,LENGTH(Str)-Pos)
+       
+           Str ← Str1 & Replace & Str2
+       
+        End While
+       
+        If Pos = 0 then
+           Output "The Entered Character is not in the string"
+        Else 
+           Output Str
+        End If
+

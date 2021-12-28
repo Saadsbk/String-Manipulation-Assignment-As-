@@ -1,0 +1,28 @@
+	Declare Str : String
+        Declare FinalStr : String
+        Declare N : Integer
+        Declare B : Integer
+
+        Str ← ""
+        FinalStr ← ""
+        N ← 0
+        B ← 0
+
+        Input "Enter a string: ", Str
+        Str ← Str & " " 
+
+        N ← LOCATE(Str, " not") 
+        B ← LOCATE(Str, "bad") 
+
+        If N < B Then
+            FinalStr ← LEFT(Str, N) & "good" & RIGHT(Str, LENGTH(Str) - B - 2)
+        End If
+
+        Output FinalStr
+
+
+
+
+
+
+

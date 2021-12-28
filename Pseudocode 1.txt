@@ -1,0 +1,28 @@
+        Declare Str : String
+        Declare checker : String 
+        Declare char1 : Char
+        Declare all : Boolean 
+        Declare i : integer
+        
+        checker ← "abcdefghijklmnopqrstuvwxyz"
+        all ← True
+        Str ← ""
+        char1 ← ""
+        i ← 0
+
+        Input "Enter a String : " , Str
+	Str = LCASE(Str)
+
+        For i ← 1 To LENGTH(checker)
+            char1 ← MID(checker, i, 1)
+            If LOCATE(Str, char1) = 0 Then
+                all ← False
+                Exit For
+            End If
+        Next
+
+        If all = True Then
+            Output "This String have all the alphabets"
+        Else
+            Output "This String does not have all the alphabets"
+        End If

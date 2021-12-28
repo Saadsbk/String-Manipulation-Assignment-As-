@@ -1,0 +1,48 @@
+        Dim Str As String
+    	Dim Str1 As String
+        Dim char1 As Char
+    	Dim char2 As Char 
+        Dim alphac As integer 
+    	Dim charc As integer 
+    	Dim digitc As integer 
+    	Dim Count As integer
+    	Dim i As integer
+	
+    	Str = ""
+    	Str1 = ""
+    	char1 = ""
+    	char2 = ""
+        alphac = 0
+        charc = 0
+        digitc = 0 
+        Count = 0
+        i = 0
+        
+        console.Write("Enter a String : ")
+        Str = console.ReadLine()
+        Str1 = lcase(Str)
+        console.Write("Enter the character that you want to count : ")
+        char1 = console.ReadLine()
+        
+      
+       For i = 1 to Len(Str)
+        
+           char2 = mid(Str,i,1)
+           If char2 = char1 then
+               count = count + 1
+           End If
+           
+           char2 = mid(Str1,i,1)
+           If char2 >= "a" and char2 <= "z" then 
+               alphac = alphac + 1
+           Else If char2 >= "0" and char2 <= "9" then
+               digitc = digitc + 1
+           Else 
+               charc = charc + 1
+           End If 
+           
+        Next           
+        
+        Console.WriteLine(Str & " has " & count & " selected character, " & alphac & " alphabets, " & digitc & " digits, and " & charc & " special characters")
+
+        Console.ReadKey()

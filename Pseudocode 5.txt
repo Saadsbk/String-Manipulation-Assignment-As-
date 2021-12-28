@@ -1,0 +1,51 @@
+        Declare str1 : String  
+        Declare char1 : Char
+        Declare a : Integer
+        Declare e : Integer   
+        Declare o : Integer
+        Declare u : Integer
+        Declare TV : Integer
+	Declare c : Integer
+    	Declare i : Integer
+
+        
+        str1 ← ""
+        c ← 0
+        char1  ← ""
+        a ← 0
+        e ← 0
+        o ← 0
+        u ← 0
+        TV ← 0
+	i ← 0
+
+        Input "Enter String: ", str1
+        str1 ← LCASE(str1)
+
+        For c ← 1 To Len(str1)
+            char1 ← Mid(str1, c, 1)
+            If char1 = "a" Then
+                a ← a + 1
+            Else If char1 = "e" Then
+                e ← e + 1
+            Else If char1 = "i" Then
+                i ← i + 1
+            Else If char1 = "o" Then
+                o ← o + 1
+            Else If char1 = "u" Then
+                u ← u + 1
+            End If
+        Next 
+
+        TV ← a + e + i + o + u
+
+       
+        Output "number of vowel a : " , a
+        Output "number of vowel e : " , e
+        Output "number of vowel i : " , i
+        Output "number of vowel o : " , o
+        Output "number of vowel u : " , u
+        Output "number of total vowels : " , TV
+
+
+

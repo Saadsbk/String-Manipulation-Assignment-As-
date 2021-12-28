@@ -1,0 +1,43 @@
+        Dim Str As String
+        Dim Str1 As String
+        Dim Str2 As String
+        Dim Remove As Char
+        Dim Replace As Char
+        Dim Pos As Integer
+
+        Str = ""
+        Str1 = ""
+        Str2 = ""
+        Remove = ""
+        Replace = ""
+        Pos = 0
+
+        Console.Write("Enter String : ")
+        Str = Console.ReadLine()
+
+        Console.Write("Enter Character to remove : ")
+        Remove = Console.ReadLine()
+
+
+        Console.Write("Enter Character to replace with : ")
+        Replace = Console.ReadLine()
+
+
+        While InStr(Str, Remove) <> 0
+
+            Pos = InStr(Str, Remove)
+
+            Str1 = Left(Str, Pos - 1)
+            Str2 = Right(Str, Len(Str) - Pos)
+
+            Str = Str1 & Replace & Str2
+
+        End While
+
+        If Pos = 0 Then
+            Console.WriteLine("The Entered Character is not in the string")
+        Else
+            Console.WriteLine(Str)
+        End If
+
+        Console.ReadKey()

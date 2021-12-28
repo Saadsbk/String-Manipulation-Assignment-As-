@@ -1,0 +1,51 @@
+        Dim str1 As String  
+        Dim char1 As Char
+        Dim a As Integer
+        Dim e As Integer   
+        Dim o As Integer
+        Dim u As Integer
+        Dim TV As Integer
+	Dim c As Integer
+    	Dim i As Integer
+
+        
+        str1 = ""
+        c = 0
+        char1  = ""
+        a = 0
+        e = 0
+        o = 0
+        u = 0
+        TV = 0
+	i = 0
+
+        Console.Write("Enter String: ")
+        str1 = lcase(Console.ReadLine())
+
+        For c = 1 To Len(str1)
+            char1  = Mid(str1, c, 1)
+            If char1 = "a" Then
+                a = a + 1
+            Else If char1 = "e" Then
+                e = e + 1
+            Else If char1 = "i" Then
+                i = i + 1
+            Else If char1 = "o" Then
+                o = o + 1
+            Else If char1 = "u" Then
+                u = u + 1
+            End If
+        Next 
+
+        TV = a + e + i + o + u
+
+       
+        Console.WriteLine("number of vowel a : " & a)
+        Console.WriteLine("number of vowel e : " & e)
+        Console.WriteLine("number of vowel i : " & i)
+        Console.WriteLine("number of vowel o : " & o)
+        Console.WriteLine("number of vowel u : " & u)
+        Console.WriteLine("number of total vowels : " & TV)
+
+        Console.ReadKey()
+

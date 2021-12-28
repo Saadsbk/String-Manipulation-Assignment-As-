@@ -1,0 +1,14 @@
+	Declare Num : Integer
+        Num ← 0       
+        Input "Enter Number Donuts : ", Num
+      
+        If Num >= 10 then 
+            Output "Number of donuts: many"
+        Else 
+            Output "Number of donuts: ", Num   
+        End If      
+
+
+
+
+

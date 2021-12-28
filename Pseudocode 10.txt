@@ -1,0 +1,21 @@
+	Declare Str : String
+        Str ← ""
+       
+      	Input "Enter a string: ", Str
+     
+       	If LENGTH(Str) >= 3 then 
+           	If RIGHT(Str,3) = "ing" then
+               		Str ← Str & "ly"
+           	Else 
+               		Str ← Str & "ing"
+           	End If 
+        End If
+        
+        Output Str
+
+
+
+
+
+
+

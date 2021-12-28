@@ -1,0 +1,16 @@
+       	Dim Str As String
+        Str = ""
+       
+      	console.Write("Enter a string: ")
+       	Str = console.ReadLine()
+     
+       	If Len(Str) >= 3 then 
+           	If Right(Str,3) = "ing" then
+               		Str = Str & "ly"
+           	Else 
+               		Str = Str & "ing"
+           	End If 
+        End If
+        
+        console.WriteLine(Str)
+        Console.ReadKey()

@@ -1,0 +1,13 @@
+    	Dim s As String 
+    	s = ""
+       
+    	console.write("Enter a String : ")    
+    	s = console.ReadLine()
+       
+    	If Len(s) > 2 then
+    		s =  Left(s,2) & Right(s,2)
+    	End If
+       
+    	console.WriteLine(s)     
+         
+    	Console.ReadKey()

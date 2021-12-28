@@ -1,0 +1,15 @@
+	Declare s : String 
+    	s ← ""
+       
+    	Input "Enter a String : ", s
+       
+    	If LENGTH(s) > 2 then
+    		s ←  LEFT(s,2) & RIGHT(s,2)
+    	End If
+       
+    	Output s   
+
+
+
+
+

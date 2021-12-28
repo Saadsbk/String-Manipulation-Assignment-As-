@@ -1,0 +1,13 @@
+        Dim Num As Integer
+        Num = 0       
+        Console.Write("Enter Number Donuts: ")
+        Num = console.ReadLine()
+      
+        If Num >= 10 then 
+            Console.WriteLine("Number of donuts: many")
+        Else 
+            Console.WriteLine("Number of donuts: " & Num)   
+        End If        
+ 
+        Console.ReadKey()
+

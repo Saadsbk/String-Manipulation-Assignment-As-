@@ -1,0 +1,21 @@
+	Declare s : String
+        Declare i : Integer
+        
+        s ← ""
+        i ← 0
+        
+        Input "Enter a string: ", s   
+      
+        For i ← 2 to  LENGTH(s)
+            If MID(s,1,1) = MID(s,i,1) then
+                s ← LEFT(s,i-1) & "*" & RIGHT(s, LENGTH(s)-i)
+            End If
+        Next
+       
+        Output s
+
+
+
+
+
+

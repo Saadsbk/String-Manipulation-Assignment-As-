@@ -1,0 +1,28 @@
+	Declare StrA : String
+        Declare StrB : String
+        Declare FA : String
+        Declare FB : String
+        Declare FinalStr : String
+	
+        StrA ← ""
+        StrB ← ""
+        FA ← ""
+        FB ← ""
+        FinalStr ← ""  
+        
+        Input "Enter String A : ", StrA
+        Input "Enter String B : ", StrB
+        
+        FA ← LEFT(StrA,2)
+        FB ← LEFT(StrB,2)
+        
+        FinalStr ← FB & RIGHT(StrA,LENGTH(StrA)-2) & " " & FA & RIGHT(StrB,LENGTH(StrB)-2)
+        
+        Output FinalStr
+        
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+        Dim Str As String
+        Dim FinalStr As String
+        Dim N As Integer
+        Dim B As Integer
+
+        Str = ""
+        FinalStr = ""
+        N = 0
+        B = 0
+
+        Console.Write("Enter a string: ")
+        Str = Console.ReadLine()
+
+        N = InStr(Str, " not")
+        B = InStr(Str, "bad")
+
+        If N < B Then
+            FinalStr = Left(Str, N) & "good" & Right(Str, Len(Str) - B - 2)
+        End If
+
+        Console.WriteLine(FinalStr)
+        Console.ReadKey()

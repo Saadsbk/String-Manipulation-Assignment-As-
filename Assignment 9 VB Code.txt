@@ -1,0 +1,26 @@
+        Dim StrA As String
+        Dim StrB As String
+        Dim FA As String
+        Dim FB As String
+        Dim FinalStr As String
+	
+        StrA = ""
+        StrB = ""
+        FA = ""
+        FB = ""
+        FinalStr = ""  
+        
+        console.Write("Enter String A : ")
+        StrA = console.ReadLine()
+        
+        console.Write("Enter String B : ")
+        StrB = console.ReadLine()
+        
+        FA = Left(StrA,2)
+        FB = Left(StrB,2)
+        
+        FinalStr = FB & Right(StrA,Len(StrA)-2) & " " & FA & Right(StrB,Len(StrB)-2)
+        
+        console.WriteLine(FinalStr)
+        
+        Console.ReadKey()

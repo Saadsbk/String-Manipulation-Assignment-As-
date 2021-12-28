@@ -1,0 +1,37 @@
+        Dim Str As String
+        Dim checker As String 
+        Dim char1 As Char
+        Dim all As Boolean 
+        Dim i As integer
+        
+        checker = "abcdefghijklmnopqrstuvwxyz"
+        all = True
+        Str = ""
+        char1 = ""
+        i = 0
+
+        Console.Write("Enter a String : ")
+        Str = lcase(Console.ReadLine())
+
+        For i = 1 To Len(checker)
+            char1 = Mid(checker, i, 1)
+            If InStr(Str, char1) = 0 Then
+                all = False
+                Exit For
+            End If
+        Next
+
+        If all = True Then
+            Console.WriteLine("This String have all the alphabets")
+        Else
+            Console.WriteLine("This String does not have all the alphabets")
+        End If
+
+        Console.ReadKey()
+
+
+
+
+
+
+

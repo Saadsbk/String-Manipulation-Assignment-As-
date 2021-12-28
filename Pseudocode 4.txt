@@ -1,0 +1,45 @@
+        Declare Str : String
+        Declare char1 : Char
+    	Declare char2 : Char
+        Declare Pos : Integer
+        Declare x : Integer
+        Declare max : Integer
+        Declare charmax : Char
+    	Declare i : Integer 
+    	Declare c : Integer 
+
+    	Pos ← 1
+    	x ← 0
+        max ← 0
+    	charmax ← ""
+    	i ← 0
+    	c ← 0
+        Str ← ""
+        char1 ← ""
+        char2 ← ""
+
+        Input "Enter a String : ", Str
+
+        For i ← 1 To LENGTH(Str)
+            char1 ← MID(Str, i, 1)
+            x ← 0
+
+            For c ← 1 To LENGTH(Str)
+                char2 ← MID(Str, c, 1)
+
+                If char1 = char2 Then
+                    x ← x + 1
+                End If
+
+                If x > max Then
+                    max ← x
+                    charmax ← char2
+                End If
+            Next
+
+        Next
+
+        Output charmax , " appeared maximum number of time : " , max
+
+
+

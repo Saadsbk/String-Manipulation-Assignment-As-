@@ -1,0 +1,19 @@
+        Dim s As String
+        Dim i As Integer
+        
+        s = ""
+        i = 0
+        
+        console.Write("Enter a string: ")
+        s = console.ReadLine()
+     
+      
+        For i = 2 to Len(s)
+            If Mid(s,1,1) = Mid(s,i,1) then
+                s = Left(s,i-1) & "*" & Right(s,Len(s)-i)
+            End If
+        Next
+       
+        console.WriteLine(s)
+         
+        Console.ReadKey()
